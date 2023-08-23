@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.pagination-item {
+  margin: 0 2px;
+
+  &__link {
+    display: block;
+    padding: 0 5px;
+    transition: all .3s ease;
+
+    &--disabled {
+      color: #828282;
+    }
+
+    &--selected {
+      color: $color-red;
+    }
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+}

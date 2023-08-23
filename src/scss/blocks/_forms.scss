@@ -1,0 +1,156 @@
+#section-form {
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/main/form-bg-1.png') no-repeat left;
+    background-size: 224px;
+    z-index: 1;
+  }
+}
+
+#section-form-2 {
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/main/contact-form-section-bg.png') no-repeat left;
+    background-size: 219px;
+    z-index: 1;
+  }
+
+  .contact-form {
+    &:after {
+      content: '';
+      position: absolute;
+      background: url('../img/main/contact-form-bg-2.png') no-repeat;
+      background-size: contain;
+      height: 489px;
+      width: 489px;
+      right: 0;
+      bottom: -2px;
+      z-index: 2;
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.contact-form {
+  position: relative;
+  z-index: 2;
+
+  form {
+    border-radius: 20px;
+    background: #516091;
+    box-shadow: 0px 4px 139px 0px rgba(0, 0, 0, 0.13);
+    padding: 30px 460px 30px 50px;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 992px) {
+      padding: 20px;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background: url('../img/main/contact-form-girl.png') no-repeat;
+    background-size: contain;
+    height: 470px;
+    width: 430px;
+    right: 0;
+    bottom: -2px;
+    z-index: 2;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: -20px;
+    bottom: -20px;
+    border-radius: 20px;
+    border: 3px dashed $color-red;
+    box-shadow: 0 4px 139px 0px rgba(0, 0, 0, 0.13);
+    z-index: -1;
+
+    @media (max-width: 767px) {
+      top: 10px;
+      right: 10px;
+      left: -10px;
+      bottom: -10px;
+    }
+  }
+}
+
+.form-title {
+  color: #FFF;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: .9;
+  font-variant: small-caps;
+  margin-bottom: 15px;
+
+  span {
+    color: $color-red;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
+}
+
+.form-subtitle {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: .9;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+
+  @media (max-width: 992px) {
+    font-size: 15px;
+  }
+}
+
+.form-annotate {
+  color: #FFF;
+  font-size: 13px;
+
+  a {
+    color: #FFF;
+    font-size: 13px;
+    text-decoration: underline;
+  }
+}

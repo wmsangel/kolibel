@@ -1,0 +1,98 @@
+.about-text-block {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  span {
+    color: $color-red;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 17px;
+  }
+}
+
+.about-text-info {
+  p {
+    font-size: 20px;
+
+    @media (max-width: 992px) {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    order: 2;
+  }
+}
+
+.about-image {
+  @media (max-width: 992px) {
+    order: 1;
+  }
+}
+
+.about-license {
+  margin-bottom: 0;
+  &__title {
+    text-align: center;
+    color: $color-red;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+    font-variant: small-caps;
+    margin-bottom: 24px;
+
+    @media (max-width: 767px) {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__subtitle {
+    color: $color-blue;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+
+    @media (max-width: 767px) {
+      font-size: 13px;
+    }
+  }
+}
+
+.about-license-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.about-license-img {
+  width: calc(40% - 50px);
+  margin: 50px 25px;
+
+  @media (max-width: 767px) {
+    width: calc(100% - 50px);
+    margin: 50px 25px 25px 25px;
+    img {
+      margin: 0 auto;
+    }
+  }
+}
+
+.about-license-text {
+  width: calc(60% - 50px);
+  margin: 25px;
+
+  @media (max-width: 767px) {
+    width: calc(100% - 50px);
+    margin: 25px;
+    img {
+      margin: 0 auto;
+    }
+  }
+}
