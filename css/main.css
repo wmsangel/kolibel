@@ -1599,7 +1599,7 @@ li.breadcrumbs-item {
   @media (max-width: 767px) {
     .doctor-type-info .swiper-button-prev {
       position: absolute;
-      top: 30%;
+      top: 20%;
       margin-top: 0;
       margin-left: 0; } }
 
@@ -1610,7 +1610,7 @@ li.breadcrumbs-item {
   @media (max-width: 767px) {
     .doctor-type-info .swiper-button-next {
       position: absolute;
-      top: 30%;
+      top: 20%;
       margin-top: 0;
       margin-left: 0; } }
 
@@ -1639,6 +1639,9 @@ li.breadcrumbs-item {
     font-weight: 600;
     margin-bottom: 15px;
     line-height: 1.2; }
+    @media (max-width: 992px) {
+      .doctor-slider-info__name {
+        margin-top: 15px; } }
   .doctor-slider-info__position {
     color: #FF7884;
     font-size: 25px;
